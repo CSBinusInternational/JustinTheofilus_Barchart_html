@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survived</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <div class="container">
+                    <h1> Number of People that Survived</h1>
+                    <a href="Passenger-Class.html">Next</a>
+                    <div class="button">
+                        <a href="Age.html">Back</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="Semi-pie" style="--percentage:61.75; --fill:rgb(250, 216, 160);color:rgb(250, 224, 224);">
+        </div>
+        <div class="Legend">
+            <div class="Dead">Dead:Orange(61,75%)</div>
+            <div class="Survived">Survived:Pink(38,24%)</div>
+        </div>
+        
+
+
+
+
+        <style>
+        .wrap {
+    background-color:papayawhip;
+    height:150px;
+    }
+    .container h1 {
+        color:rgb(129, 125, 112);
+        font-size:50px;
+        position:relative;
+        top:40px;
+        left:50px
+    }
+    .container a {
+        background-color:rgb(240, 218, 184);
+        font-size:22px;
+        letter-spacing: 4px;
+        float:right;
+        margin-right:10px;
+        margin-top:50px;
+        outline: 2px solid rgb(224, 199, 160);
+        text-decoration: none;
+        color:black;
+        box-shadow:4px 4px rgb(224, 199, 160);
+    }
+    .button a{
+        background-color:rgb(240, 218, 184);
+        font-size:22px;
+        letter-spacing: 4px;
+        float:right;
+        position:absolute;
+        margin-left:10px;
+        margin-top:50px;
+        outline: 2px solid rgb(224, 199, 160);
+        text-decoration: none;
+        color:black;
+        box-shadow:4px 4px rgb(224, 199, 160); 
+    }
+    .container a:hover {
+        box-shadow:none;
+        margin-top:54px;
+        margin-right:6px;
+    }
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    body {
+        width:100%;
+        min-height:100vh;
+        overflow-x:hidden;
+        overflow-y:scroll;
+        background-color:rgb(255, 253, 249);
+    }
+    .Semi-pie {
+                width:400px;
+                height:200px;
+                margin:0;
+                position: absolute;
+                top:50%;
+                left:36%;
+                font-size: 20px;
+                display:flex;
+                align-items: flex-end;
+                justify-content: center;
+                box-sizing: border-box;
+                overflow:hidden;
+                --percentage:0;
+                --fill:#000;
+                
+                
+
+            }
+	.Semi-pie::after{           
+        content:' ';
+        position: absolute;
+        left:0;
+        top:0;
+        width:300px;
+        height:300px;
+        border: 50px solid ;
+        border-color:rgb(245, 210, 210) rgb(245, 210, 210) var(--fill) var(--fill);
+        border-radius:50%;
+        transform:rotate(calc(1deg *(-45 + var(--percentage)*1.8)));
+    }    
+    .Legend {
+        background-color: rgb(247, 242, 232);
+        border:4px solid rgb(129, 125, 112);
+        margin-top:2%;
+        width:21%;   
+        position:absolute;
+        display:flex;
+        justify-content: space-evenly;
+        left:38.5%;
+        font-family:sans-serif;
+        font-size:14.4px;
+    }
+    .Dead {
+        margin-top:1%;
+        margin-bottom:1%;
+        
+
+    }
+    .Survived {
+        margin-top:1%;
+        margin-bottom:1%;
+        margin-left:2%;
+        
+    }
+    @media (max-width:700px) {
+        html{
+        overflow-x:hidden;
+        overflow-y: hidden;
+    }
+    .wrap {
+        background-color:papayawhip;
+        height:150px;
+        border-bottom:4px dashed rgb(240, 218, 184);
+    }
+    body {
+        width:100%;
+        min-height:100%;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        background-color:rgb(255, 253, 249);
+    }
+    .container h1 {
+        color:rgb(129, 125, 112);
+        font-size:40px;
+        position:relative;
+        top:0px;
+        left:10px;
+    }
+    .container a {
+        background-color:rgb(240, 218, 184);
+        font-size:22px;
+        letter-spacing: 4px;
+        float:right;
+        margin-right:20px;
+        margin-top:12px;
+        border: 3px solid rgb(224, 199, 160);
+        border-radius: 2px;
+        text-decoration: none;
+        color:black;
+        box-shadow: none;
+    }
+    .container a:hover {
+        margin-right:20px;
+        margin-top:12px;
+    }
+    .Semi-pie {
+        width:100%;
+        height:20%;
+        margin:0;
+        position: absolute;
+        top:60%;
+        left:9%;
+        font-size: 20px;
+        display:flex;
+        align-items: flex-end;
+        justify-content: center;
+        box-sizing: border-box;
+        overflow:hidden;
+        --percentage:0;
+        --fill:#000;
+                
+                
+
+            }
+	.Semi-pie::after{           
+        content:' ';
+        position: absolute;
+        left:0;
+        top:0;
+        width:200px;
+        height:200px;
+        border: 50px solid ;
+        border-color:rgb(245, 210, 210) rgb(245, 210, 210) var(--fill) var(--fill);
+        border-radius:50%;
+        transform:rotate(calc(1deg *(-45 + var(--percentage)*1.8)));
+    }    
+    .Legend {
+        background-color: rgb(247, 242, 232);
+        border:4px solid rgb(129, 125, 112);
+        margin-top:25%;
+        width:90%;   
+        position:absolute;
+        display:flex;
+        justify-content: space-evenly;
+        left:4%;
+        font-family:sans-serif;
+        font-size:14.4px;
+    }
+    .Dead {
+        margin-top:1%;
+        margin-bottom:1%;
+        
+
+    }
+    .Survived {
+        margin-top:1%;
+        margin-bottom:1%;
+        margin-left:2%;
+        
+    }
+
+    }
+        </style>
+        
+    </body>
+</html>

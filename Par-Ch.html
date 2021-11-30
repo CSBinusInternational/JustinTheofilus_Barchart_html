@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parent/Children</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrap">
+                <div class="container">
+                    <h1> Parent Per Children Statistics</h1>
+                    <a href="index.html">Back to First Page</a>
+                    <div class="button">
+                        <a href="Survived.html">Back</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="Pie-chart">
+        </div>
+        <div class="legend">
+            <p>
+                With no Parents/Adults<span style="color:rgb(238, 227, 192)"></span><br>
+                With a Single Parent/Adult<span style="color:rgb(189, 183, 163)"></span><br>
+                With Two Parents/Adults<span style="color:rgb(158, 153, 137)"></span><br>
+                With More than Two Parents/Adults<span style="color:rgb(129, 125, 112)"></span><br>
+            </p>
+        </div>
+    
+    <style>
+        .wrap {
+    background-color:papayawhip;
+    height:150px;
+    }
+    .container h1 {
+        color:rgb(129, 125, 112);
+        font-size:50px;
+        position:relative;
+        top:40px;
+        left:50px
+    }
+    .container a {
+        background-color:rgb(240, 218, 184);
+        font-size:22px;
+        letter-spacing: 4px;
+        float:right;
+        margin-right:10px;
+        margin-top:50px;
+        outline: 2px solid rgb(224, 199, 160);
+        text-decoration: none;
+        color:black;
+        box-shadow:4px 4px rgb(224, 199, 160);
+    }
+    .button a{
+        background-color:rgb(240, 218, 184);
+        font-size:22px;
+        letter-spacing: 4px;
+        float:right;
+        position:absolute;
+        margin-left:10px;
+        margin-top:50px;
+        outline: 2px solid rgb(224, 199, 160);
+        text-decoration: none;
+        color:black;
+        box-shadow:4px 4px rgb(224, 199, 160); 
+    }
+    .container a:hover {
+        box-shadow:none;
+        margin-top:54px;
+        margin-right:6px;
+    }
+    * {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    }
+    body {
+        width:100%;
+        min-height:100vh;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        background-color:rgb(255, 253, 249);
+    }
+    .Pie-chart {
+        border: 2px solid black;
+		display: block;
+		position: absolute;
+        top:40%;
+        left:37%;
+		width: 400px;
+		height: 400px;
+		border-radius: 50%;
+		background-image: conic-gradient(rgb(129, 125, 112) 0deg,rgb(129, 125, 112) 6.52deg, rgb(158, 153, 137) 6.52deg, rgb(158, 153, 137) 37.55deg, rgb(189, 183, 163) 37.55deg, rgb(189, 183, 163) 84.24deg,rgb(238, 227, 192) 84.24deg,rgb(238, 227, 192) 360deg);
+    }
+    .legend span::before {
+        content:"";
+        display:inline-block;
+        width:0.6rem;
+        height:0.6rem;
+        font-weight:700px;
+        background:currentColor;
+        margin-left:4px;
+        margin-right:4px;
+    }
+    .legend p{
+        font-family: sans-serif;
+        font-size:13px;
+        position:absolute;
+        top:40%;
+        left:70%;
+        text-align:right;
+        background-color:rgb(250, 247, 239);
+        border:2px solid black;
+    }
+    @media (max-width:700px){
+        html{
+        overflow-x:hidden;
+    }
+    .wrap {
+        background-color:papayawhip;
+        height:150px;
+        border-bottom:4px dashed rgb(240, 218, 184);
+    }
+    body {
+        width:100%;
+        min-height:100%;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        background-color:rgb(255, 253, 249);
+    }
+    .container h1 {
+        color:rgb(129, 125, 112);
+        font-size:40px;
+        position:relative;
+        top:0px;
+        left:10px;
+    }
+    .container a {
+        background-color:rgb(240, 218, 184);
+        font-size:22px;
+        letter-spacing: 4px;
+        float:right;
+        margin-right:20px;
+        margin-top:12px;
+        border: 3px solid rgb(224, 199, 160);
+        border-radius: 2px;
+        text-decoration: none;
+        color:black;
+        box-shadow: none;
+    }
+    .container a:hover {
+        margin-right:20px;
+        margin-top:12px;
+    }
+    .Pie-chart {
+        border: 2px solid black;
+		display: block;
+		position: absolute;
+        top:47%;
+        left:10%;
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		background-image: conic-gradient(rgb(129, 125, 112) 0deg,rgb(129, 125, 112) 6.52deg, rgb(158, 153, 137) 6.52deg, rgb(158, 153, 137) 37.55deg, rgb(189, 183, 163) 37.55deg, rgb(189, 183, 163) 84.24deg,rgb(238, 227, 192) 84.24deg,rgb(238, 227, 192) 360deg);
+    }
+    .legend span::before {
+        content:"";
+        display:inline-block;
+        width:0.6rem;
+        height:0.6rem;
+        font-weight:700px;
+        background:currentColor;
+        margin-left:4px;
+        margin-right:4px;
+    }
+    .legend p{
+        font-family: sans-serif;
+        font-size:13px;
+        position:absolute;
+        top:30%;
+        left:20%;
+        text-align:right;
+        background-color:rgb(250, 247, 239);
+        border:2px solid black;
+    }
+    }
+    
+
+    </style>
+    </body>
+</html>
